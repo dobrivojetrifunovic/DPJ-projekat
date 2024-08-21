@@ -151,7 +151,7 @@ function love.draw()
 
             -- Highlight sub-boards that have been won
             if mainBoardStatus[i][j] == "D" then
-                love.graphics.setColor(1, 1, 0)
+                love.graphics.setColor(1, 1, 0, 0.3)
                 love.graphics.rectangle("fill", offsetX, offsetY, cellSize * 3, cellSize * 3)
                 love.graphics.setColor(colors.lines)
             end
