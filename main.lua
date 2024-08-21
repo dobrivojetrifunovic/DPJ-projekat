@@ -151,17 +151,17 @@ function love.draw()
 
             -- Highlight sub-boards that have been won
             if mainBoardStatus[i][j] == "D" then
-                love.graphics.setColor(1, 1, 0)  -- Light green overlay for won boards
+                love.graphics.setColor(1, 1, 0)
                 love.graphics.rectangle("fill", offsetX, offsetY, cellSize * 3, cellSize * 3)
                 love.graphics.setColor(colors.lines)
             end
             if mainBoardStatus[i][j] == "X" then
-                love.graphics.setColor(1, 0, 0)  -- Light green overlay for won boards
+                love.graphics.setColor(1, 0, 0)
                 love.graphics.rectangle("fill", offsetX, offsetY, cellSize * 3, cellSize * 3)
                 love.graphics.setColor(colors.lines)
             end
             if mainBoardStatus[i][j] == "O" then
-                love.graphics.setColor(0, 0, 1)  -- Light green overlay for won boards
+                love.graphics.setColor(0, 0, 1)
                 love.graphics.rectangle("fill", offsetX, offsetY, cellSize * 3, cellSize * 3)
                 love.graphics.setColor(colors.lines)
             end
